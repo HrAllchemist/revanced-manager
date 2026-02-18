@@ -8,6 +8,7 @@ import 'package:revanced_manager/ui/widgets/homeView/available_updates_card.dart
 import 'package:revanced_manager/ui/widgets/homeView/dashboard_raw_chip.dart';
 import 'package:revanced_manager/ui/widgets/homeView/installed_apps_card.dart';
 import 'package:revanced_manager/ui/widgets/homeView/latest_commit_card.dart';
+import 'package:revanced_manager/ui/widgets/homeView/megaman_x3_demo.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends StatelessWidget {
@@ -94,7 +95,8 @@ class HomeView extends StatelessWidget {
                   const SizedBox(height: 14),
                   model.showUpdatableApps
                       ? AvailableUpdatesCard()
-                      : InstalledAppsCard()
+                      : InstalledAppsCard(),
+                  const MegamanX3Demo(),
                 ],
               ),
             ),
